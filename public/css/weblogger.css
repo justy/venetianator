@@ -1,0 +1,51 @@
+/* line 1, ../../src/weblogger.scss */
+.weblogger {
+  width: 90%;
+  padding: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #f00;
+  background-color: #222;
+  font-size: 0.7em;
+  font-family: courier new;
+}
+
+/* line 12, ../../src/weblogger.scss */
+.client {
+  color: #0f0;
+  margin-left: 100px;
+}
+
+/* line 17, ../../src/weblogger.scss */
+.server {
+  color: #f00;
+  margin-left: 300px;
+}
+
+/* line 22, ../../src/weblogger.scss */
+.generic {
+  color: #eee;
+}
+
+/* line 27, ../../src/weblogger.scss */
+.do {
+  width: 500px;
+  margin-left: 10px;
+  color: #9090ff;
+}
+
+/* line 33, ../../src/weblogger.scss */
+.send {
+  width: 400px;
+}
+
+/* line 38, ../../src/weblogger.scss */
+.receive {
+  width: 400px;
+}
+
+/* line 43, ../../src/weblogger.scss */
+div {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}

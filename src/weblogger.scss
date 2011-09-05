@@ -1,0 +1,46 @@
+.weblogger {
+  width: 90%;
+  padding: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #f00;
+  background-color: #222;
+  font-size: 1.1em;
+  font-family: courier new;
+}
+
+.client {
+  color: #0f0;
+    margin-left: 100px;
+}
+
+.server {
+  color: #f00;
+    margin-left: 300px;
+}
+
+.generic {
+  color: #eee;
+}
+
+
+.do {
+  width: 500px;
+  margin-left: 10px;
+  color: #9090ff;
+}
+
+.send {
+  width: 400px;
+
+}
+
+.receive {
+  width: 400px;
+
+}
+
+div {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}

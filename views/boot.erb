@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title><%= @page_title %></title>
+  <meta name="generator" content="[[ app name ]] by Justy at Cool Fusion dot com">
+  <meta name="author" content="Justin Clayden">
+  <%= include_css "screen" %>
+  <%= include_css "weblogger" %>
+   <script type="text/javascript" src="/js/cf/asyn.js"></script>
+   <script type="text/javascript" src="/js/jquery-1.5.1.js"></script>
+   <script type="text/javascript" src="/js/cf/weblogger.js"></script>
+   <script type="text/javascript" src="/js/jquery.json-2.2.min.js"></script>
+   <script type="text/javascript"> window.onload = function() {
+    asyn_boot();
+    // temp
+    //$("#weblogger").slideUp(500);
+    //$("#weblogger").fadeOut(500);
+  } 
+
+$('#showHideWeblogger').live('click', function() {
+    if($("#weblogger").is(':visible')){
+      blog("weblogger was visible");
+      //$(".commentsSwitch").animate({"marginLeft": "-=53px"}, 500);
+      $("#weblogger").fadeOut(300);
+    } else {
+      blog("weblogger was NOT visible");
+      //$(".commentsSwitch").animate({"marginLeft": "+=53px"}, 500);
+      $("#weblogger").fadeIn(300);
+    };
+});
+
+    </script>
+  <!-- Date: 2011-02-25 -->
+</head>
+<body>
+<div id='status' data-asyn='{"verb":"set_content","noun":"check."}'>nope</div>
+<div id='A' data-asyn='{"verb":"set_content","noun":"from 1234","element_id":"A"}'>content_1234</div>
+
+<div id='B' data-asyn='{"verb":"set_content","noun":"from 1235","element_id":"A"}'>content_1235</div>
+
+<div id='C' data-asyn='{"verb":"set_content","noun":"from 1236","element_id":"A"}'>content_1236</div>
+
+<div id='D' data-asyn='{"verb":"set_content","noun":"from 1237","element_id":"A"}'>content_1237</div>
+
+<div id="Title setter" data-asyn='{"verb":"set_title","noun":"Done."}'></div>
+<div id='showHideWeblogger'>
+<p>Toggle local logger</p>
+</div>
+<div id="weblogger"></div>
+</body>
+</html>
+
+
+

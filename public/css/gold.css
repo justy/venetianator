@@ -1,0 +1,345 @@
+/* BASE STRUCTURE, COLOR, FONTS */
+html {
+  background: #e6d6b0;
+}
+body {
+  font-size: 123.1%;
+  font-family: garamond, baskerville, times, sans-serif;
+  background: #e6d6b0;
+  color: #222;
+}
+#main {
+  width: 37em;
+  margin: 1em auto 1em auto;
+  background: #ffe;
+  border-left: 1px solid #b3a15a;
+  border-right: 1px solid #432;
+  border-bottom: 1px solid #432;
+}
+#text {
+  padding: 0em 2em 2em 2em;
+}
+
+#log {
+ padding: 2em 2em 2em 2em;
+ color: #444;
+ font-size: 75%;
+}
+
+/* NAVIGATION AND BANNER */
+ul#nav li {
+  list-style: none;
+  display: inline;
+  margin-left: 0em;
+  font-size: 0.95em;
+}
+ul#nav li a {
+  color: #432;
+  padding: 0.3em 0.66em;
+}
+ul#nav li a:hover {
+  background: #e6d6b0;
+  border-right: 1px solid #432;
+}
+ul#nav {
+  margin: 0em;
+  padding: 0.25em 0em;
+  margin: 0em auto;
+  border-bottom: 1px solid #432;
+  background: #b3a15a;
+}
+#banner {
+  height: 145px;
+  background-image: url('/assets/images/writing.jpg');
+  border-bottom: 1px solid #432;
+}
+#subnav {
+  padding: 0.25em;
+  text-align: center;
+  font-size: 0.8em;
+  border-top: 5px solid #432;
+  border-bottom: 1px solid #432;
+}
+#subnav a {
+  color: #432;
+}
+
+
+/* COMMON STYLES */
+h1, h2, h3, h4 {
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: #432;
+  margin: 0.75em 0em 0.2em 0em;
+  border-bottom: 1px solid #432;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1.0em;
+}
+h1 + p, h2 + p, h3 + p, blockquote > p:first-child, li > p:first-child {
+  text-indent: 0em;
+}
+h1 + p::first-letter, h2 + p::first-letter, h3 + p::first-letter {
+  font-size: 1.6em;
+  color: #432;
+}
+p {
+  line-height: 1.6em;
+  text-indent: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #d52;
+}
+em, cite, dfn, i {
+  font-style: italic;
+  letter-spacing: 0.08em;
+}
+ul {
+  margin: 0.75em 0em 0.75em 2.66em;
+}
+ul > li {
+  list-style: square;
+}
+ol {
+  margin: 0.75em 0em 0.75em 2.75em;
+}
+ol > li {
+  list-style: decimal;
+}
+li {
+  margin-bottom: 0.25em;
+}
+
+/* ol > li p, ul > li p {
+  text-indent: 0em;
+} */
+blockquote {
+  font-size: 0.95em;
+  margin: 0.75em 0em 0.75em 1.5em;
+  padding: 0em 0.5em;
+  border-left: 1px solid #b3a15a;
+}
+blockquote p {
+  line-height: 1.4em;
+}
+pre {
+  margin: 0.75em 0em;
+  padding: 0.5em;
+  border-top: 1px solid #b3a15a;
+  border-left: 1px solid #b3a15a;
+  border-right: 1px solid #745e25;
+  border-bottom: 1px solid #745e25;
+  background: #fff;
+  white-space: pre-wrap;
+}
+pre, code {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  background-color: #222;
+  color: #eee;
+  font-size: 0.95em;
+  font-family: courier new;
+}
+strong {
+  font-weight: bold;
+}
+
+
+/* SPECIALIZED STYLES */
+p.date {
+  text-align: right;
+  margin-top: 1.5em;
+  font-weight: bold;
+  color: #432;
+  letter-spacing: 0.1em;
+}
+p.date + h1, p.date + h2 {
+  margin-top: 0em;
+}
+p.archive {
+  margin-top: 0em;
+}
+img.feed {
+  vertical-align: -0.125em;
+}
+ol.archive {
+  margin-left: 1.5em;
+  margin-top: 0em;
+}
+ol.archive li {
+  list-style: none;
+}
+ol.archive span.date {
+  width: 3.33em;
+  float: left;
+}
+.excerpt {
+  margin-left: 1.5em;
+}
+.footnote {
+  font-size: 0.70em;
+}
+
+
+/* HTML TUTORIAL */
+a.selected {
+  font-weight: bold;
+}
+div.prev-next {
+  margin-top: 0.75em;
+  font-size: 0.95em;
+}
+div.prev, div.next {
+  width: 48%;
+}
+div.next {
+  text-align: right;
+  float: right;
+}
+div.note, div.tip, div.caution {
+  margin: 0.75em 0em;
+}
+div.note h4, div.tip h4, div.caution h4 {
+  text-align: right;
+  float: left;
+  width: 4.5em;
+  margin: 0.18em;
+  border: none;
+  font-weight: bold;
+}
+div.note p, div.tip p, div.caution p {
+  text-indent: 0em;
+  margin-left: 5.5em;
+}
+span.guilabel, span.guibutton, span.guimenu, span.guisubmenu, span.guimenuitem, strong.keycap {
+  font-variant: small-caps;
+}
+div.figure h4 {
+  margin-bottom: 0.5em;
+}
+
+
+/* FORM AND COMMENTS */
+form p {
+  text-indent: 0em;
+  line-height: 1.2em;
+  margin-bottom: 0.6em;
+  font-size: 0.95em;
+}
+label, legend {
+  display: block;
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #432;
+}
+fieldset label {
+  display: inline;
+  font-weight: normal;
+  font-size: 1em;
+}
+fieldset {
+  margin-bottom: 0.6em;
+}
+fieldset p {
+  margin-bottom: 0em;
+}
+input[type='text'], textarea {
+  width: 24em;
+  font-family: courier;
+  font-size: 0.8em;
+  color: #432;
+}
+textarea {
+  height: 14em;
+}
+div#comment-syntax {
+  float: right;
+  width: 17.75em;
+  padding-top: 1.25em;
+  font-size: 0.8em;
+  color: #745e25;
+}
+input#comment-post, input#comment-preview {
+  background: #e6d6b0;
+  padding: 0.2em;
+  font-family: garamond, baskerville, times, sans-serif;
+}
+input#comment-post {
+  font-weight: bold;
+  color: #432;
+}
+input#comment-preview {
+  color: #745e25;
+}
+fieldset abbr {
+  font-family: courier, monospace;
+  font-size: 0.95em;
+  border-bottom: 1px #222 dotted;
+}
+p.signature {
+  font-size: 0.90em;
+  color: #745e25;
+  font-variant: small-caps;
+  margin-bottom: 1.25em;
+  border-top: 1px dotted #745e25;
+}
+blockquote.comment {
+  margin: 0em;
+  padding: 0em;
+  border-left: none;
+}
+#comment-syntax ul, #seealso ul {
+  margin-left: 1.75em;
+}
+
+
+/* FOOTER */
+#footer {
+  border-top: 1px solid #432;
+  margin-top: 2em;
+  font-size: 0.85em;
+  min-height: 7.5em;
+}
+#footer p {
+  text-indent: 0em;
+  margin: 0em;
+  line-height: 1.25em;
+}
+#footer p.creativecommons {
+  text-indent: 85px;
+  background-image: url('/assets/images/cc3.0by-80x15.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#footer p.copyright {
+  margin-top: 1.25em;
+}
+#footer h2 {
+  border-bottom: none;
+  margin: 0.25em 0em;
+}
+#footer h2 + p::first-letter {
+  font-size: 1.0em;
+  color: #222;
+}
+#seealso {
+  width: 50%;
+}
+#seealso ul {
+  padding-right: 0.5em;
+}
+#copyright {
+  width: 50%;
+  float: right;
+}
